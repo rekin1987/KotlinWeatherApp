@@ -1,4 +1,4 @@
-package pl.emget.kotlinweatherapp
+package pl.emget.kotlinweatherapp.ui
 
 import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup

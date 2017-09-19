@@ -1,4 +1,4 @@
-package pl.emget.kotlinweatherapp
+package pl.emget.kotlinweatherapp.ui
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -8,6 +8,8 @@ import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.find
 import org.jetbrains.anko.toast
 import org.jetbrains.anko.uiThread
+import pl.emget.kotlinweatherapp.R
+import pl.emget.kotlinweatherapp.model.Request
 
 class MainActivity : AppCompatActivity() {
 
