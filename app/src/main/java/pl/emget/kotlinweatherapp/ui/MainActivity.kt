@@ -9,6 +9,7 @@ import org.jetbrains.anko.toast
 import org.jetbrains.anko.uiThread
 import pl.emget.kotlinweatherapp.R
 import pl.emget.kotlinweatherapp.model.RequestForecastCommand
+import kotlin.properties.Delegates
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,5 +25,13 @@ class MainActivity : AppCompatActivity() {
                 forecastList.adapter = ForecastListAdapter(appModel) { toast(it.date) }
             }
         }
+    }
+
+    var myProp by Delegates.observable("") {
+        _,_, new -> toast(new)
+    }
+
+    companion object {
+        lateinit var ins: MainActivity
     }
 }
