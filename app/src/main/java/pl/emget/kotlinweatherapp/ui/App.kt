@@ -12,10 +12,10 @@ fun Any.dd(message: String, tag: String = "${this.javaClass.simpleName}") = Log.
 
 class App : Application(), AnkoLogger {
 
-    //companion object{
-//        lateinit var instance: App
-    var instance: App by NotNullSingleValueVar()
-    //   }
+    companion object {
+        //        lateinit var instance: App
+        var instance: App by NotNullSingleValueVar()
+    }
 
     override fun onCreate() {
         super.onCreate()
